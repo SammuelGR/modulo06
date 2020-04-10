@@ -1,7 +1,9 @@
 import React from 'react';
 import {SafeAreaView, Text, StatusBar} from 'react-native';
 
-const App = () => {
+import './config/ReactotronConfig';
+
+export default function App() {
 	return (
 		<>
 			<StatusBar barStyle="dark-content" />
@@ -11,6 +13,4 @@ const App = () => {
 			</SafeAreaView>
 		</>
 	);
-};
-
-export default App;
+}
