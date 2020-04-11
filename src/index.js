@@ -1,16 +1,10 @@
 import React from 'react';
-import {SafeAreaView, Text, StatusBar} from 'react-native';
+import 'react-native-gesture-handler';
 
 import './config/ReactotronConfig';
 
-export default function App() {
-	return (
-		<>
-			<StatusBar barStyle="dark-content" />
+import Routes from './routes';
 
-			<SafeAreaView>
-				<Text>Olá, React Native!</Text>
-			</SafeAreaView>
-		</>
-	);
+export default function App() {
+	return <Routes />;
 }
